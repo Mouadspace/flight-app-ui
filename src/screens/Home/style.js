@@ -29,13 +29,14 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
     width: '100%',
-    height: 235,
+    height: 270,
     marginTop: 30,
     paddingHorizontal: 22,
+    // backgroundColor: 'green',
   },
   ticketImage: {
     width: '100%',
-    height: 235,
+    height: 270,
   },
   cornerBox: {
     position: 'absolute',
@@ -101,15 +102,63 @@ const styles = StyleSheet.create({
 
   blur: {
     width: '100%',
-    height: 120,
+    height: 140,
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
   blurContainer: {
     overflow: 'hidden',
-    marginTop: 10,
+    marginTop: 23,
     width: '100%',
-    height: 120,
+    height: 140,
     borderBottomRightRadius: 40,
     borderBottomLeftRadius: 40,
+    zIndex: 1,
+  },
+
+  flightIcon: {
+    width: 20,
+    height: 20,
+    transform: [{rotate: '90deg'}],
+  },
+
+  blurCard: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 26,
+
+    // backgroundColor: 'red',
+  },
+
+  destination: {
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
+
+  flightContainer: {
+    padding: 20,
+    borderRadius: 50,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+  },
+
+  bottomCard: {
+    marginTop: -100,
+    width: '100%',
+    height: 190,
+    backgroundColor: '#28292D',
+    borderBottomRightRadius: 40,
+    borderBottomLeftRadius: 40,
+    zIndex: -1,
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    justifyContent: 'space-evenly',
+    paddingBottom: 35,
+  },
+  sit: {
+    width: '30%',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 });
 

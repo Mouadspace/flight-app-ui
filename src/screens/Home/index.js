@@ -51,12 +51,57 @@ const Home = () => {
                   source={require('../../assets/images/qr-code.png')}
                 />
               </View>
+
               <View style={styles.blurContainer}>
-                <BlurView
-                  blurType="light"
-                  blurAmount={20}
-                  style={styles.blur}></BlurView>
+                <BlurView blurType="light" blurAmount={20} style={styles.blur}>
+                  <View style={styles.blurCard}>
+                    <View style={styles.origin}>
+                      <Text style={styles.txt}>LHR</Text>
+                      <Text style={[styles.nameTxt, {fontSize: 12}]}>
+                        London, UK
+                      </Text>
+                      <Text
+                        style={[styles.nameTxt, {fontSize: 12, marginTop: 5}]}>
+                        08.25 PM
+                      </Text>
+                    </View>
+
+                    <View style={styles.flightContainer}>
+                      <Image
+                        style={styles.flightIcon}
+                        source={require('../../assets/icons/flight.png')}
+                      />
+                    </View>
+
+                    <View style={styles.destination}>
+                      <Text style={styles.txt}>DUB</Text>
+                      <Text style={[styles.nameTxt, {fontSize: 12}]}>
+                        Dubai, UAE
+                      </Text>
+                      <Text
+                        style={[styles.nameTxt, {fontSize: 12, marginTop: 5}]}>
+                        09.50 AM
+                      </Text>
+                    </View>
+                  </View>
+                </BlurView>
               </View>
+            </View>
+          </View>
+        </View>
+        <View style={[styles.container, {zIndex: -1}]}>
+          <View style={styles.bottomCard}>
+            <View style={styles.sit}>
+              <Text style={[styles.txt, {fontSize: 20}]}>5</Text>
+              <Text style={[styles.nameTxt, {fontSize: 14}]}>Terminal</Text>
+            </View>
+            <View style={styles.sit}>
+              <Text style={[styles.txt, {fontSize: 20}]}>A7</Text>
+              <Text style={[styles.nameTxt, {fontSize: 14}]}>Gate</Text>
+            </View>
+            <View style={styles.sit}>
+              <Text style={[styles.txt, {fontSize: 20}]}>F23</Text>
+              <Text style={[styles.nameTxt, {fontSize: 14}]}>Seat</Text>
             </View>
           </View>
         </View>
