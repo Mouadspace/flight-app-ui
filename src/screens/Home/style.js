@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E5FA79',
     borderRadius: 40,
     alignSelf: 'flex-end',
+
     zIndex: 1,
     flexDirection: 'column',
     justifyContent: 'center',
@@ -160,16 +161,80 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
   },
+  bottomContainer: {
+    flexDirection: 'column',
+    width: '100%',
+    marginTop: 30,
+    paddingHorizontal: 22,
+  },
+
+  options: {
+    width: '100%',
+    height: 200,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 22,
+    marginTop: 20,
+    marginBottom: 20,
+  },
+  option: {
+    width: '48%',
+    height: 200,
+    backgroundColor: '#4B5AEB',
+    borderRadius: 20,
+  },
+  food: {},
+  luggage: {
+    backgroundColor: '#28292D',
+    position: 'relative',
+    overflow: 'hidden',
+  },
+
+  topEdgeB: {
+    width: 40,
+    height: 40,
+    backgroundColor: 'transparent',
+    borderBottomRightRadius: 35,
+    alignSelf: 'flex-end',
+    marginRight: -10,
+    marginTop: 93,
+    zIndex: 0,
+
+    borderBottomColor: '#171717',
+    borderBottomWidth: 10,
+    borderRightColor: '#171717',
+    borderRightWidth: 10,
+  },
+  rightEdgeB: {
+    marginRight: 67,
+    marginTop: 38,
+  },
+  txtCard: {
+    position: 'absolute',
+    marginTop: 22,
+    marginLeft: 22,
+    fontSize: 16,
+    color: 'white',
+  },
+  txtCardRight: {
+    marginTop: 22,
+    marginLeft: 22,
+    fontSize: 16,
+    color: 'white',
+  },
+  weight: {
+    marginTop: 5,
+    marginLeft: 22,
+    fontSize: 14,
+    color: 'rgba(255,255,255,0.6)',
+  },
+  luggageImg: {
+    position: 'absolute',
+    width: 100,
+    height: 200,
+    right: 22,
+    bottom: -80,
+  },
 });
 
 export default styles;
-
-// shadowProp: {
-//   shadowColor: '#171717',
-//   shadowOffset: {width: 8, height: -8},
-//   shadowOpacity: 1,
-//   shadowRadius: 0,
-// },
-/* <DropShadow style={styles.shadowProp}>
-              <View style={styles.rightCornerBox}></View>
-            </DropShadow> */

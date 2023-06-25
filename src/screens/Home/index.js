@@ -15,7 +15,7 @@ import {BlurView} from '@react-native-community/blur';
 const Home = () => {
   return (
     <SafeAreaView style={{backgroundColor: '#181617', flex: 1}}>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <Header
           iconSrc={[
             require('../../assets/icons/menus.png'),
@@ -89,7 +89,7 @@ const Home = () => {
             </View>
           </View>
         </View>
-        <View style={[styles.container, {zIndex: -1}]}>
+        <View style={[styles.bottomContainer, {zIndex: -1}]}>
           <View style={styles.bottomCard}>
             <View style={styles.sit}>
               <Text style={[styles.txt, {fontSize: 20}]}>5</Text>
@@ -103,6 +103,43 @@ const Home = () => {
               <Text style={[styles.txt, {fontSize: 20}]}>F23</Text>
               <Text style={[styles.nameTxt, {fontSize: 14}]}>Seat</Text>
             </View>
+          </View>
+        </View>
+        <View style={styles.options}>
+          <View style={[styles.option, styles.food]}>
+            <View style={styles.stack}>
+              <Text style={styles.txtCard}>{`Food \n& Drink`}</Text>
+
+              <View
+                style={[
+                  styles.cornerBox,
+                  {
+                    top: 123,
+                    borderBottomLeftRadius: 0,
+                    borderTopLeftRadius: 38,
+                  },
+                ]}></View>
+              <View
+                style={[
+                  styles.circleBox,
+                  {backgroundColor: 'white', top: 130},
+                ]}>
+                <Image
+                  style={[styles.backIcon]}
+                  source={require('../../assets/icons/arrow.png')}
+                />
+              </View>
+            </View>
+            <View style={[styles.topEdgeB]}></View>
+            <View style={[styles.topEdgeB, styles.rightEdgeB]}></View>
+          </View>
+          <View style={[styles.option, styles.luggage]}>
+            <Text style={styles.txtCardRight}>{`Luggage \nallowance`}</Text>
+            <Text style={styles.weight}>30kg</Text>
+            <Image
+              style={[styles.luggageImg]}
+              source={require('../../assets/images/luggage-rm.png')}
+            />
           </View>
         </View>
       </ScrollView>
